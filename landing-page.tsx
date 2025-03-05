@@ -14,7 +14,7 @@ export default function LandingPage() {
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Logo />
-            <span className="text-xl font-bold">GeoTikTok</span>
+            <span className="text-xl font-bold">TokHop USA</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#features" className="text-sm font-medium transition-colors hover:text-black/70">
@@ -399,7 +399,7 @@ export default function LandingPage() {
         <div className="container flex flex-col gap-4 md:flex-row md:gap-8">
           <div className="flex items-center gap-2 md:mr-auto">
             <Logo />
-            <span className="text-xl font-bold">GeoTikTok</span>
+            <span className="text-xl font-bold">TokHop USA</span>
           </div>
           <div className="flex flex-wrap gap-4 md:items-center md:gap-8">
             <Link href="#" className="text-sm font-medium transition-colors hover:text-black/70">
@@ -413,7 +413,7 @@ export default function LandingPage() {
             </Link>
           </div>
           <div className="text-sm text-gray-500 md:ml-auto md:text-right">
-            &copy; {new Date().getFullYear()} GeoTikTok. All rights reserved.
+            &copy; {new Date().getFullYear()} TokHop USA. All rights reserved.
           </div>
         </div>
       </footer>

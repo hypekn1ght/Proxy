@@ -24,9 +24,9 @@ export default function SuccessPage() {
             </svg>
           </div>
         </div>
-        <h1 className="mb-4 text-3xl font-bold">Payment Successful!</h1>
-        <p className="mb-8 text-gray-500">
-          Thank you for your purchase. You now have access to GeoTikTok services. You'll receive a confirmation email
+        <h1 className="mb-4 text-2xl font-bold">Payment Successful!</h1>
+        <p className="mb-8 text-gray-600">
+          Thank you for your purchase. You now have access to TokHop USA services. You'll receive a confirmation email
           shortly with all the details.
         </p>
         <div className="space-y-4">

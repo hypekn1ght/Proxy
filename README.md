@@ -1,4 +1,4 @@
-# GeoTikTok - TikTok USA Access Platform
+# TokHop USA - TikTok USA Access Platform
 
 A Next.js application that enables creators outside the US to post directly to TikTok USA.
 
