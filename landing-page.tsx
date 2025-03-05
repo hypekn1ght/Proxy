@@ -5,7 +5,7 @@ import { CheckCircle, Globe, Phone, Shield, Star, Zap } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Logo } from "@/components/logo"
-import { StripeCheckout } from "@/components/stripe-checkout"
+import { TelegramButton } from "@/components/telegram-button"
 
 export default function LandingPage() {
   return (
@@ -31,7 +31,7 @@ export default function LandingPage() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <StripeCheckout priceId="price_monthly" buttonText="Get Started" size="sm" />
+            <TelegramButton buttonText="Get Started" size="sm" />
           </div>
         </div>
       </header>
@@ -51,7 +51,7 @@ export default function LandingPage() {
                   door to 100M+ American viewers and higher engagement rates.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <StripeCheckout priceId="price_monthly" buttonText="Get Started" size="lg" />
+                  <TelegramButton buttonText="Get Started" size="lg" />
                 </div>
               </div>
               <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
@@ -185,7 +185,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mt-12 text-center">
-              <StripeCheckout priceId="price_monthly" buttonText="Get Started Now" size="lg" />
+              <TelegramButton buttonText="Get Started Now" size="lg" />
             </div>
           </div>
         </section>
@@ -230,7 +230,7 @@ export default function LandingPage() {
                     <span>Telegram Support</span>
                   </li>
                 </ul>
-                <StripeCheckout priceId="price_weekly" buttonText="Get Started" variant="outline" fullWidth={true} />
+                <TelegramButton buttonText="Get Started" variant="outline" fullWidth={true} />
               </Card>
               <Card className="relative p-6 space-y-6 border border-teal-500 shadow-lg">
                 <div className="absolute -top-3 right-4">
@@ -268,7 +268,7 @@ export default function LandingPage() {
                     <span>Priority Support</span>
                   </li>
                 </ul>
-                <StripeCheckout priceId="price_monthly" buttonText="Get Started" fullWidth={true} />
+                <TelegramButton buttonText="Get Started" fullWidth={true} />
               </Card>
             </div>
           </div>
@@ -389,7 +389,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">
-                <StripeCheckout priceId="price_monthly" buttonText="Get Started" size="lg" className="px-8" />
+                <TelegramButton buttonText="Get Started" size="lg" className="px-8" />
               </div>
             </div>
           </div>
