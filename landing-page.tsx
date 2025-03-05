@@ -215,19 +215,19 @@ export default function LandingPage() {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>US TikTok account access</span>
+                    <span>US TikTok access</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>4 posts per month</span>
+                    <span>Unlimited Posts</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>Basic analytics</span>
+                    <span>5G Sim + US Phone</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>Email support</span>
+                    <span>Telegram Support</span>
                   </li>
                 </ul>
                 <StripeCheckout priceId="price_weekly" buttonText="Get Started" variant="outline" fullWidth={true} />
@@ -249,23 +249,23 @@ export default function LandingPage() {
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>US TikTok account access</span>
+                    <span>US TikTok access</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>20 posts per month</span>
+                    <span>Unlimited Posts</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>Advanced analytics</span>
+                    <span>5G Sim + US Phone</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>Priority support</span>
+                    <span>Telegram Support</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-teal-500" />
-                    <span>Dedicated US phone number</span>
+                    <span>Priority Support</span>
                   </li>
                 </ul>
                 <StripeCheckout priceId="price_monthly" buttonText="Get Started" fullWidth={true} />
