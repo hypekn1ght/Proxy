@@ -2,30 +2,32 @@
 
 import { Button } from "@/components/ui/button"
 
-interface TelegramButtonProps {
+interface StripeLinkButtonProps {
   buttonText?: string
   variant?: "default" | "outline"
   size?: "default" | "sm" | "lg"
   className?: string
   fullWidth?: boolean
+  stripeUrl: string
 }
 
-export function TelegramButton({
-  buttonText = "Get Started",
+export function StripeLinkButton({
+  buttonText = "Subscribe",
   variant = "default",
   size = "default",
   className = "",
   fullWidth = false,
-}: TelegramButtonProps) {
+  stripeUrl
+}: StripeLinkButtonProps) {
   const handleClick = () => {
-    window.open("https://t.me/TokHopUSA", "_blank");
+    window.open(stripeUrl, "_blank");
   }
 
   return (
     <Button
-      variant="outline"
+      variant={variant}
       size={size}
-      className={`${className} ${fullWidth ? "w-full" : ""} bg-white text-gray-800 border-gray-300 hover:bg-gray-100`}
+      className={`${className} ${fullWidth ? "w-full" : ""} ${variant === "default" ? "bg-teal-500 hover:bg-teal-600 text-white" : ""}`}
       onClick={handleClick}
     >
       {buttonText}

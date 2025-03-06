@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Logo } from "@/components/logo"
 import { TelegramButton } from "@/components/telegram-button"
+import { StripeLinkButton } from "@/components/stripe-link-button"
 
 export default function LandingPage() {
   return (
@@ -30,8 +31,17 @@ export default function LandingPage() {
               FAQ
             </Link>
           </nav>
-          <div className="flex items-center gap-4">
-            <TelegramButton buttonText="Get Started" size="sm" />
+          <div className="hidden md:flex items-center gap-4">
+            <TelegramButton buttonText="Contact Us" size="sm" />
+            <StripeLinkButton 
+              buttonText="Subscribe" 
+              variant="default" 
+              size="sm" 
+              stripeUrl="https://buy.stripe.com/00gcNP72o848772aEZ"
+            />
+          </div>
+          <div className="md:hidden">
+            <TelegramButton buttonText="Contact Us" size="sm" />
           </div>
         </div>
       </header>
@@ -51,7 +61,13 @@ export default function LandingPage() {
                   door to 100M+ American viewers and higher engagement rates.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <TelegramButton buttonText="Get Started" size="lg" />
+                  <TelegramButton buttonText="Contact Us" size="lg" />
+                  <StripeLinkButton 
+                    buttonText="Subscribe Monthly" 
+                    variant="default" 
+                    size="lg" 
+                    stripeUrl="https://buy.stripe.com/00gcNP72o848772aEZ"
+                  />
                 </div>
               </div>
               <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
@@ -185,7 +201,15 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mt-12 text-center">
-              <TelegramButton buttonText="Get Started Now" size="lg" />
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <TelegramButton buttonText="Contact Us" size="lg" />
+                <StripeLinkButton 
+                  buttonText="Subscribe Monthly" 
+                  variant="default" 
+                  size="lg" 
+                  stripeUrl="https://buy.stripe.com/00gcNP72o848772aEZ"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -208,9 +232,9 @@ export default function LandingPage() {
                 </div>
                 <div className="space-y-2">
                   <p className="text-4xl font-bold">
-                    $50<span className="text-base font-normal text-gray-500">/month</span>
+                    $50<span className="text-base font-normal text-gray-500">/week</span>
                   </p>
-                  <p className="text-sm text-gray-500">Billed monthly</p>
+                  <p className="text-sm text-gray-500">Billed weekly</p>
                 </div>
                 <ul className="space-y-2">
                   <li className="flex items-center">
@@ -230,7 +254,15 @@ export default function LandingPage() {
                     <span>Telegram Support</span>
                   </li>
                 </ul>
-                <TelegramButton buttonText="Get Started" variant="outline" fullWidth={true} />
+                <div className="space-y-3">
+                  <TelegramButton buttonText="Contact Us" variant="outline" fullWidth={true} />
+                  <StripeLinkButton 
+                    buttonText="Subscribe Weekly" 
+                    variant="default" 
+                    fullWidth={true} 
+                    stripeUrl="https://buy.stripe.com/5kA013euQ2JO8b6bJ4"
+                  />
+                </div>
               </Card>
               <Card className="relative p-6 space-y-6 border border-teal-500 shadow-lg">
                 <div className="absolute -top-3 right-4">
@@ -268,7 +300,15 @@ export default function LandingPage() {
                     <span>Priority Support</span>
                   </li>
                 </ul>
-                <TelegramButton buttonText="Get Started" fullWidth={true} />
+                <div className="space-y-3">
+                  <TelegramButton buttonText="Contact Us" variant="outline" fullWidth={true} />
+                  <StripeLinkButton 
+                    buttonText="Subscribe Monthly" 
+                    variant="default" 
+                    fullWidth={true} 
+                    stripeUrl="https://buy.stripe.com/00gcNP72o848772aEZ"
+                  />
+                </div>
               </Card>
             </div>
           </div>
@@ -389,7 +429,14 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">
-                <TelegramButton buttonText="Get Started" size="lg" className="px-8" />
+                <TelegramButton buttonText="Contact Us" size="lg" className="px-8" />
+                <StripeLinkButton 
+                  buttonText="Subscribe Monthly" 
+                  variant="default" 
+                  size="lg" 
+                  className="px-8"
+                  stripeUrl="https://buy.stripe.com/00gcNP72o848772aEZ"
+                />
               </div>
             </div>
           </div>
