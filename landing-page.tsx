@@ -408,9 +408,14 @@ export default function LandingPage() {
             <Link href="#" className="text-sm font-medium transition-colors hover:text-black/70">
               Privacy
             </Link>
-            <Link href="#" className="text-sm font-medium transition-colors hover:text-black/70">
+            <a 
+              href="https://t.me/TokHopUSA" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm font-medium transition-colors hover:text-black/70"
+            >
               Contact
-            </Link>
+            </a>
           </div>
           <div className="text-sm text-gray-500 md:ml-auto md:text-right">
             &copy; {new Date().getFullYear()} TokHop USA. All rights reserved.
