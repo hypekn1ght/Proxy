@@ -8,8 +8,10 @@ import { Logo } from "@/components/logo"
 import { TelegramButton } from "@/components/telegram-button"
 import { StripeLinkButton } from "@/components/stripe-link-button"
 
+
 export default function LandingPage() {
   return (
+    
     <div className="flex min-h-screen flex-col bg-white">
       <header className="sticky top-0 z-40 border-b bg-white/95 backdrop-blur">
         <div className="container flex h-16 items-center justify-between py-4">
